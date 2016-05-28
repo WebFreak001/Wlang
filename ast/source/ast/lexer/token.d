@@ -176,7 +176,6 @@ private:
 
 //Types
 enum TypeType {
-	LAZY,
 	AUTO,
 
 	BOOL,
