@@ -16,6 +16,10 @@ Log log;
 
 int main(string[] args) {
 	log = Log.MainLogger();
+	if (args.length <= 1) {
+		writeln("Usage: ", args[0], " [file1] [file2] [...]");
+		return 1;
+	}
 	foreach (arg; args[1 .. $])
 		processFile(arg);
 	return 0;
