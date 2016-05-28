@@ -48,7 +48,7 @@ public:
 	}
 
 	override JSONValue toJson() {
-		return JSONValue(["class" : JSONValue(typeof(this).classinfo.name), "super" : JSONValue(super.toJson)]);
+		return JSONValue(["class" : JSONValue(typeof(this).classinfo.name), "super" : super.toJson]);
 	}
 }
 
